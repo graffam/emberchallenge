@@ -4,7 +4,7 @@ import Pretender from 'pretender';
 
 var App, server;
 
-module('Integration - Speaker Page', {
+module('Integration - Projects Page', {
   setup: function() {
     App = startApp();
     var projects = [
@@ -22,11 +22,11 @@ module('Integration - Speaker Page', {
       }
     ];
     server = new Pretender(function() {
-      this.get('/api/speakers', function(request) {
+      this.get('/api/projects', function(request) {
         return [200, {"Content-Type": "application/json"}, JSON.stringify({projects: projects})];
       });
 
-      this.get('/api/speakers/:id', function(request) {
+      this.get('/api/projects/:id', function(request) {
           var project = projects.find(function(project) {
             if (project.id === parseInt(request.params.id, 10)) {
               return project;
