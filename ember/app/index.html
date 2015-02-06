@@ -15,11 +15,15 @@
     {{content-for 'head-footer'}}
   </head>
   <body>
-    {{content-for 'body'}}
+    <div class="row">
+      <div class="small-12 columns">
+        {{content-for 'body'}}
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/emberchallenge.js"></script>
+        <script src="assets/vendor.js"></script>
+        <script src="assets/emberchallenge.js"></script>
 
-    {{content-for 'body-footer'}}
+        {{content-for 'body-footer'}}
+      </div>
+    </div>
   </body>
 </html>

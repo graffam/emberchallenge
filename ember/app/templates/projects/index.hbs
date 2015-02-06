@@ -1,3 +1,10 @@
-{{#each}}
-  {{link-to name 'projects.show' this}}
-{{/each}}
+
+<ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+  {{#each}}
+    <li>
+      {{#linkTo 'projects.show' this}}
+        <img {{bind-attr src=imageUrl}}>
+      {{/linkTo }}
+    </li>
+  {{/each}}
+</ul>
