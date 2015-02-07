@@ -1,10 +1,11 @@
-<div class="row">
-  <div class="small-10 small-centered columns text-center">
+<div class="row fullWidth">
+  <div class="small-12 columns nav text-center">
     <h2 id="title">Welcome to My Portfolio</h2>
-
     {{link-to 'Home' 'application'}}
     {{link-to 'Projects' 'projects'}}
     {{link-to 'About' 'about'}}
-    {{outlet}}
   </div>
+</div>
+<div class="row fullWidth">
+    {{outlet}}
 </div>
