@@ -1,6 +1,8 @@
 <h4>{{name}}</h4>
 <div class="projectImg">
-  <img {{bind-attr src=imageUrl }} alt="projectImage">
+  <a {{ bind-attr href=url }}>
+    <img {{bind-attr src=imageUrl }} alt="projectImage">
+  </a>
 </div>
 <div class="description">
   <p> {{description}} </p>
