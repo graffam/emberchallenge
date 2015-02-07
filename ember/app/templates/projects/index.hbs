@@ -1,9 +1,9 @@
-<ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+<ul>
   {{#each}}
     <li>
-      {{#linkTo 'projects.show' this}}
+      {{#link-to 'projects.show' this}}
         <img {{bind-attr src=imageUrl}}>
-      {{/linkTo }}
+      {{/link-to }}
     </li>
   {{/each}}
 </ul>
