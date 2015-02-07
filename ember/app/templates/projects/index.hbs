@@ -1,9 +1,11 @@
-<ul>
-  {{#each}}
-    <li>
-      {{#link-to 'projects.show' this}}
-        <img {{bind-attr src=imageUrl}}>
-      {{/link-to }}
-    </li>
-  {{/each}}
-</ul>
+<div class="row">
+  <ul class="small-block-grid-2" id="projectlist">
+    {{#each}}
+      <li>
+        {{#link-to 'projects.show' this}}
+          <img {{bind-attr src=imageUrl}}>
+        {{/link-to }}
+      </li>
+    {{/each}}
+  </ul>
+</div>

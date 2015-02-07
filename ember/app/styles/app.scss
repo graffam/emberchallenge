@@ -7,7 +7,7 @@
 }
 
 .category {
-  background-color: #A2A384;
+  background-color: #C5AD4B;
 }
 
 .fullWidth {
@@ -15,4 +15,15 @@
    margin-left: auto;
    margin-right: auto;
    max-width: initial;
+}
+
+#projectlist {
+  margin-top: 3em;
+}
+
+#projectlist li a img {
+  border-radius: .2em;
+  border-color: #3F2C26;
+  border-width: .3em;
+  border-style: solid;
 }
